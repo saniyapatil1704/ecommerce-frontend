@@ -387,7 +387,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../styles/AddProductPage.css"; // Keep custom CSS for styling details
 
 // This is the functional component for adding a new product.
-const AddProductPage = () => {
+const AddProduct = () => {
   // `useNavigate` is initialized here to get the navigation function.
   const navigate = useNavigate();
   // `useContext` is used to get the `currentUser` object from `AuthContext`.
@@ -608,4 +608,4 @@ const AddProductPage = () => {
 };
 
 // Export the component for use in other parts of the application.
-export default AddProductPage;
+export default AddProduct;

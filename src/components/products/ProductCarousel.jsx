@@ -27,7 +27,7 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../styles/Productpage.css';
+import '../../styles/ProductPage.css';
 
 const ProductCarousel = ({ products, handleAddToCart }) => {
     return (

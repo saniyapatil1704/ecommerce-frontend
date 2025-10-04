@@ -62,7 +62,7 @@ import Navbar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
 // import ProductPage from './pages/ProductPage';
 import ProductDetailPage from "./components/products/ProductDetails";
-import AddProductPage from "./components/products/AddProduct";
+import AddProduct from "./components/products/AddProduct";
 import EditProduct from "./components/products/EditProduct";
 import ProductList from "./pages/ProductList";
 import CartPage from "./pages/CartPage";
@@ -122,7 +122,7 @@ const App = () => {
                 path="/create-products"
                 element={
                   <PrivateRoute>
-                    <AddProductPage />
+                    <AddProduct />
                   </PrivateRoute>
                 }
               />

@@ -488,7 +488,7 @@ import { useContext } from 'react';
 import AuthContext from '../../context/AuthContext';
 import productService from '../../services/productService';
 import cartService from '../../services/cartService';
-import './ProductDetailsPage.css';
+import '../../styles/ProductDetailPage.css';
 
 /**
  * @description This component displays a product using a professional,
