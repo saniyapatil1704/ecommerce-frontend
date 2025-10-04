@@ -270,20 +270,20 @@ const RegisterPage = () => {
         // consistency across our components.
         // This is the main container `div` with Bootstrap classes for centering content.
         <div className="container d-flex justify-content-center align-items-center" style={{ minHeight: '80vh' }}>
-            // This `div` acts as a card with padding, a shadow, and a fixed width.
+            {/* // This `div` acts as a card with padding, a shadow, and a fixed width. */}
             <div className="card p-4 shadow-sm" style={{ width: '25rem' }}>
-                // A heading for the form.
+                {/* // A heading for the form. */}
                 <h2 className="text-center mb-4">Register</h2>
-                // We use conditional rendering to show an error message if the `error` state is not null.
-                // If `error` is a truthy value, the `div` with the alert will be rendered.
+                {/* // We use conditional rendering to show an error message if the `error` state is not null.
+                // If `error` is a truthy value, the `div` with the alert will be rendered. */}
                 {error && <div className="alert alert-danger">{error}</div>}
-                // The `form` element with an `onSubmit` event handler that calls `handleSubmit`.
+                {/* // The `form` element with an `onSubmit` event handler that calls `handleSubmit`. */}
                 <form onSubmit={handleSubmit}>
-                    // A `div` for the email input group.
+                    {/* // A `div` for the email input group. */}
                     <div className="mb-3">
-                        // A `label` for the email input. `htmlFor` links it to the input field's `id`.
+                        {/* // A `label` for the email input. `htmlFor` links it to the input field's `id`. */}
                         <label htmlFor="formBasicEmail" className="form-label">Email address</label>
-                        // The email input field.
+                        {/* // The email input field. */}
                         <input
                             type="email"
                             className="form-control"
@@ -298,11 +298,11 @@ const RegisterPage = () => {
                         />
                     </div>
 
-                    // A `div` for the password input group.
+                    {/* // A `div` for the password input group. */}
                     <div className="mb-3">
-                        // A `label` for the password input.
+                        {/* // A `label` for the password input. */}
                         <label htmlFor="formBasicPassword" className="form-label">Password</label>
-                        // The password input field.
+                        {/* // The password input field. */}
                         <input
                             type="password"
                             className="form-control"
@@ -316,7 +316,7 @@ const RegisterPage = () => {
                         />
                     </div>
 
-                    // The submit button.
+                    {/* // The submit button. */}
                     <button
                         type="submit"
                         className="btn btn-primary w-100"
@@ -324,8 +324,8 @@ const RegisterPage = () => {
                         // preventing multiple submissions while a request is in progress.
                         disabled={loading}
                     >
-                        // This uses a ternary operator to conditionally change the button's text
-                        // based on the `loading` state.
+                        {/* // This uses a ternary operator to conditionally change the button's text
+                        // based on the `loading` state. */}
                         {loading ? 'Registering...' : 'Register'}
                     </button>
                 </form>
